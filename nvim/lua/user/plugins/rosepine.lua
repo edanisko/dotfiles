@@ -34,6 +34,9 @@ return {
             -- vim.api.nvim_set_hl(0, "Floaterm", {  fg='#FFD887'})
             vim.api.nvim_set_hl(0, "FloatermBorder", {  fg='#FFB000'})
 
+            -- Git Sign
+            vim.api.nvim_set_hl(0, "SignColumn", { bg='none' })
+
 
 
         end,
