@@ -9,8 +9,11 @@ vim.opt.wrap = false
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.wo.number = true
 
-vim.opt.wildmode = 'longest:full,full' -- complete the longest common match, and allow tabbing the results to fully complete them
+-- complete the longest common match, and allow tabbing the results to fully complete them
+vim.opt.wildmode = 'longest:full,full'
+vim.opt.completeopt = 'menuone,longest,preview'
 
 vim.opt.title = true
 vim.opt.mouse = 'a' -- enable mouse for all modes
@@ -40,9 +43,6 @@ vim.opt.signcolumn =  'yes:2'
 vim.opt.undofile = true
 vim.opt.backup = true
 vim.opt.backupdir:remove('.')
-
-vim.wo.number = true
-
 
 
 
