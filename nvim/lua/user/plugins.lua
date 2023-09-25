@@ -85,9 +85,9 @@ return {
     },
 
     -- Add a dashboard
-    {
-        'glepnir/dashboard-nvim'
-    },
+    -- {
+    --     'glepnir/dashboard-nvim'
+    -- },
 
 
     -- Git Commands

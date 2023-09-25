@@ -35,14 +35,13 @@ vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.confirm = true
 
-vim.opt.signcolumn =  'yes:1'
+vim.opt.signcolumn =  'yes:2'
 
 vim.opt.undofile = true
 vim.opt.backup = true
 vim.opt.backupdir:remove('.')
 
-vim.opt.number = true
-
+vim.wo.number = true
 
 
 
