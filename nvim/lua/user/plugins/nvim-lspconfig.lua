@@ -17,6 +17,9 @@ return {{
     -- PHP
     require'lspconfig'.intelephense.setup{capabilities = capabilities}
 
+    -- Python
+    require('lspconfig').pyright.setup{capabilities = capabilities}
+
     -- Vue, Javascript, Typescript
     require('lspconfig').volar.setup({
       capabilities = capabilities,

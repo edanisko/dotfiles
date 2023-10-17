@@ -39,10 +39,15 @@ vim.keymap.set('n','<leader>x',':!open %<CR><CR>')
 -- ThePrimeagen pv replacement for Ex ¯\_(ツ)_/¯
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- The HOME END key 
+-- The HOME END key
 vim.keymap.set('i', '<HOME>', '<ESC>A,')
 -- Go to the first non-blank character of the line
 vim.api.nvim_set_keymap('n', '<Home>', '^', { noremap = true, silent = true })
 
 -- Go to the last character of the line
 vim.api.nvim_set_keymap('n', '<End>', 'g_', { noremap = true, silent = true })
+
+-- Select all and delete:
+vim.api.nvim_set_keymap('n', '<leader>sa', 'gg<S-v>G', {})
+
+
