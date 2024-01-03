@@ -36,7 +36,7 @@ return {{
     local function ltrim(s)
       return s:match'^%s*(.*)'
     end
-    
+ 
     cmp.setup({
       -- preselect = false
       snippet = {
@@ -45,7 +45,11 @@ return {{
         end,
       },
       formatting = {
-        format = lspkind.cmp_format({}),
+        format = lspkind.cmp_format({
+          mode = "symbol",
+          max_width = 50,
+          symbol_map = { Copilot = "" }
+        }),
       },
       mapping={
         ["<TAB>"] = cmp.mapping(function(fallback)
